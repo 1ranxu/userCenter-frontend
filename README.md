@@ -14,21 +14,21 @@
 
 ### 技术选型
 
-### 初始化images/引入需要的技术
+### 初始化/引入需要的技术
 
 ### 写Demo
 
 ### 写代码实现业务逻辑
 
-### 测试（单元测试images/系统测试）
+### 测试（单元测试/系统测试）
 
 所谓的单元测试，就是比较细粒度和非常简单的测试，例如对增删改查的代码进行测试。系统测试则是前后端开发人员共同进行的测试，包括但不限于接口联调。
 
 测试的目的就是不要把能提前发现的问题拖到线上，假如在线上发现bug之后，然后再从头来修改，这个成本会比你之前就做好测试要高很多
 
-### 代码提交images/代码评审
+### 代码提交/代码评审
 
-把写好的代码发布到一个所有人都能看见的远程仓库。通过领导或同事的评审，确定没有问题后，再把你的代码上线，防止有人把一段恶意代码images/bug提交上线。
+把写好的代码发布到一个所有人都能看见的远程仓库。通过领导或同事的评审，确定没有问题后，再把你的代码上线，防止有人把一段恶意代码/bug提交上线。
 
 ### 部署
 
@@ -46,11 +46,11 @@
 
 功能可以简单理解为一方面支持用户登录，另一方面管理员可以对用户进行统一的管理。
 
-1. **登录images/注册**
+1. **登录/注册**
 
 2. **用户管理（仅有管理员可见）（对用户的查询或者更改）**
 
-3. **用户校验（目前面向所有人，后续可以仅付费用户可以注册）** 
+3. **用户校验（目前面向所有人，后续可以仅付费用户可以注册）**
 
 ## 技术选型
 
@@ -63,17 +63,16 @@
    - Ant Design Pro(现成的管理系统)
 
 2. **后端**：
-
    - Java （编程语言）
 
    - Spring（依赖注入框架，管理Java对象，集成一些其他内容） 
    - SpringMvc （Web框架，提供接口访问，restful接口等能力）
    - Mybatis（Java操作数据库的框架，持久层框架，对JDBC的封装） 
    - Mybatis-Plus（对mybatis的增强，不用写SQL也能实现增删改查） 
-   - SpringBoot（快速启动images/快速集成项目，帮助管理Spring的配置，帮助整合框架） 
+   - SpringBoot（快速启动/快速集成项目，帮助管理Spring的配置，帮助整合框架） 
    - MySQL（数据库）
 
-3. **部署**：服务器images/容器（平台）
+3. **部署**：服务器/容器（平台）
 
 
 
@@ -83,12 +82,12 @@
    1. **前端初始化** 
       1. 初始化项目 
       2. 引入组件
-      3. 框架介绍images/项目瘦身(去除Ant Design Pro中用不到的默认的功能的代码)
+      3. 框架介绍/项目瘦身(去除Ant Design Pro中用不到的默认的功能的代码)
    2. **后端初始化** 
       1. 准备环境（MySQL数据库)
       2. 引入框架（整合框架）
 2. **数据库设计** 
-3. **登录images/注册** 
+3. **登录/注册** 
    1. **后端** 
       1. 规整项目目录 2 min
       2. 实现基本数据库操作（操作 user 表）
@@ -103,7 +102,7 @@
       4. 补充用户注册校验逻辑
 4. **用户管理（仅管理员可见）**
    1. **后端**
-      1. 实现用户管理逻辑（查询用户images/查询用户）
+      1. 实现用户管理逻辑（查询用户/查询用户）
          1.  查询用户
 
          2.  查询用户
@@ -138,11 +137,11 @@
 
 ### 前端环境准备
 
-1. [Node.js (nodejs.org)](https:images/images/nodejs.orgimages/zh-cn) 版本16
+1. [Node.js (nodejs.org)](https://nodejs.org/zh-cn) 版本16
 
-2. [安装 | Yarn 中文文档 (bootcss.com)](https:images/images/yarn.bootcss.comimages/docsimages/install.html#windows-stable)
+2. [安装 | Yarn 中文文档 (bootcss.com)](https://yarn.bootcss.com/docs/install.html#windows-stable)
 
-   ![image-20230822204457808](images/image-20230822204457808.png)
+   ![image-20230822204457808](https://github.com/1ranxu/userCenter-image/blob/main/image-20230822204457808.png)
 
 
 
@@ -150,17 +149,17 @@
 
 #### 初始化Ant Design Pro
 
-[开始使用 - Ant Design Pro](https:images/images/pro.ant.designimages/zh-CNimages/docsimages/getting-startedimages/)
+[开始使用 - Ant Design Pro](https://pro.ant.design/zh-CN/docs/getting-started/)
 
 #### 使用yarn包管理器安装依赖
 
-![image-20230822220825939](images/image-20230822220825939.png)
+![image-20230822220825939](https://github.com/1ranxu/userCenter-image/blob/main/image-20230822220825939.png)
 
 #### 启动
 
-![image-20230822224336905](images/image-20230822224336905.png)
+![image-20230822224336905](https://github.com/1ranxu/userCenter-image/blob/main/image-20230822224336905.png)
 
-![image-20230822224409132](images/image-20230822224409132.png)
+![image-20230822224409132](https://github.com/1ranxu/userCenter-image/blob/main/image-20230822224409132.png)
 
 #### 开启Umi UI
 
@@ -168,47 +167,47 @@
  yarn add @umijs/preset-ui -D
 ```
 
-![image-20230823134025299](images/image-20230823134025299.png)
+![image-20230823134025299](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823134025299.png)
 
 #### 使用Umi UI添加分析页模板到项目 
 
-![image-20230823134829152](images/image-20230823134829152.png)
+![image-20230823134829152](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823134829152.png)
 
 #### 项目瘦身(去除Ant Design Pro中用不到的默认的功能的代码)
 
 ##### 去除国际化
 
-![image-20230823140950973](images/image-20230823140950973.png)
+![image-20230823140950973](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823140950973.png)
 
-![image-20230823142003411](images/image-20230823142003411.png)
+![image-20230823142003411](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823142003411.png)
 
 ##### 去除集成测试
 
-![image-20230823142515370](images/image-20230823142515370.png)
+![image-20230823142515370](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823142515370.png)
 
 ##### 去除分析页
 
-![image-20230823142642984](images/image-20230823142642984.png)
+![image-20230823142642984](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823142642984.png)
 
 ##### 去除分析页路由
 
-![image-20230823142927368](images/image-20230823142927368.png)
+![image-20230823142927368](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823142927368.png)
 
 ##### 去除接口文档工具
 
-![image-20230823143119074](images/image-20230823143119074.png)
+![image-20230823143119074](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823143119074.png)
 
 ##### 去除测试
 
-![image-20230823200238377](images/image-20230823200238377.png)
+![image-20230823200238377](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823200238377.png)
 
-![image-20230823200757807](images/image-20230823200757807.png)
+![image-20230823200757807](https://github.com/1ranxu/userCenter-image/blob/main/image-20230823200757807.png)
 
 ### 后端初始化
 
 #### 准备环境（MySQL数据库)
 
-[MySQL :: Download MySQL Community Server (Archived Versions)](https:images/images/downloads.mysql.comimages/archivesimages/communityimages/)
+[MySQL :: Download MySQL Community Server (Archived Versions)](https://downloads.mysql.com/archives/community/)
 
 #### 三种初始化Java项目的方法
 
@@ -220,7 +219,7 @@
 
 #### 引入框架（整合框架）
 
-1. MybatisPlus [快速开始 | MyBatis-Plus (baomidou.com)](https:images/images/baomidou.comimages/pagesimages/226c21images/#初始化工程)
+1. MybatisPlus [快速开始 | MyBatis-Plus (baomidou.com)](https://baomidou.com/pages/226c21/#初始化工程)
 
 ## 数据库设计
 
@@ -268,13 +267,13 @@ create table user_center.user
     comment '用户表';
 ```
 
-## **登录images/注册** 
+## **登录/注册** 
 
 ### 后端
 
 #### 规整项目目录
 
-![image-20230824200929227](images/image-20230824200929227.png)
+![image-20230824200929227](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824200929227.png)
 
 #### 实现基本的数据库操作（操作User表）
 
@@ -288,29 +287,29 @@ create table user_center.user
 
    建议使用MybatisX插件自动根据数据库生成，减少重复工作
 
-![image-20230824171617887](images/image-20230824171617887.png)
+![image-20230824171617887](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824171617887.png)
 
-![image-20230824171748781](images/image-20230824171748781.png)
+![image-20230824171748781](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824171748781.png)
 
-![image-20230824202022420](images/image-20230824202022420.png)
+![image-20230824202022420](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824202022420.png)
 
 把generator中自动生成的文件放到对应的包下面
 
-![image-20230824202906943](images/image-20230824202906943.png)
+![image-20230824202906943](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824202906943.png)
 
   4. 为UserService创建一个测试类
 
      鼠标点击接口类名UserService，使用快捷键Alt + Enter，选择Create Test
 
-     ![image-20230824203336761](images/image-20230824203336761.png)
+     ![image-20230824203336761](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824203336761.png)
 
-     ![image-20230824203504937](images/image-20230824203504937.png)
+     ![image-20230824203504937](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824203504937.png)
 
      使用GenerateAllSetter插件帮助快速生成所有set方法
 
      鼠标点击user对象，使用快捷键Alt +Enter 
 
-     ![image-20230824205129488](images/image-20230824205129488.png)
+     ![image-20230824205129488](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824205129488.png)
 
      `踩坑`：因为Mybatis-Plus会自动把User实体对象中的驼峰属性名，转换成下划线连接的字段，然后执行sql，但我们的字段也是驼峰，所以会报错。可以在application.yml中把修改配置，关掉自动转换。从这点可以看出，我们不用把表字段特意设计成驼峰，字段中的单词就用下划线连接，Mybatis会帮我们自动开启转换，也就不用写下面的配置。
 
@@ -320,9 +319,9 @@ create table user_center.user
          map-underscore-to-camel-case: false
      ```
 
-     [使用配置 | MyBatis-Plus (baomidou.com)](https:images/images/baomidou.comimages/pagesimages/56bac0images/#mapunderscoretocamelcase)
+     [使用配置 | MyBatis-Plus (baomidou.com)](https://baomidou.com/pages/56bac0/#mapunderscoretocamelcase)
 
-     ![image-20230824211655691](images/image-20230824211655691.png)
+     ![image-20230824211655691](https://github.com/1ranxu/userCenter-image/blob/main/image-20230824211655691.png)
 
 #### 实现注册逻辑
 
@@ -394,7 +393,7 @@ public long userRegister(String userAccount, String userPassword, String checkPa
 }
 ~~~
 
-#### 实现登录逻辑(单机登录=>后续改造为分布式images/第三方登录)
+#### 实现登录逻辑(单机登录=>后续改造为分布式/第三方登录)
 
 **登录接口定义**
 
@@ -439,7 +438,7 @@ public long userRegister(String userAccount, String userPassword, String checkPa
 
 5. 返回脱敏后的信息  
 
-> [逻辑删除 | MyBatis-Plus (baomidou.com)](https:images/images/baomidou.comimages/pagesimages/6b03c5images/)删除用户记录时，并不是将其移除数据库，而是修改这条记录的isDelete字段的值0为1，标记此纪录已无效，好处是查询时会将此记录从业务中排除，但以后有需要还能设置条件再查询出来，有助于帮助开发者定位问题，防止恶意删除。如果用户记录已被逻辑删除，就不能被查询到，具体配置查询官网
+> [逻辑删除 | MyBatis-Plus (baomidou.com)](https://baomidou.com/pages/6b03c5/)删除用户记录时，并不是将其移除数据库，而是修改这条记录的isDelete字段的值0为1，标记此纪录已无效，好处是查询时会将此记录从业务中排除，但以后有需要还能设置条件再查询出来，有助于帮助开发者定位问题，防止恶意删除。如果用户记录已被逻辑删除，就不能被查询到，具体配置查询官网
 
 ```java
 public User userLogin(String userAccount, String userPassword, HttpServletRequest request) {
@@ -516,7 +515,7 @@ public User getSafetyUser(User user) {
 
 使用GenerateSerialVersionUID插件给UserRegisterRequest类生成一个序列化Id，防止序列化时产生冲突。使用快捷键Alt + Insert
 
-![image-20230826143454136](images/image-20230826143454136.png)
+![image-20230826143454136](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826143454136.png)
 
 ```java
 package com.luoying.model.request;
@@ -665,19 +664,19 @@ public class UserController {
 
 使用IDEA自带的请求工具，向服务器发请求，搭配断点排错
 
-![image-20230826152416228](images/image-20230826152416228.png)
+![image-20230826152416228](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826152416228.png)
 
 也可点击绿色图标来发请求 
 
-![image-20230826152748975](images/image-20230826152748975.png)
+![image-20230826152748975](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826152748975.png)
 
 发请求
 
-![image-20230826152456817](images/image-20230826152456817.png)
+![image-20230826152456817](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826152456817.png)
 
 查看返回结果
 
-![image-20230826152630680](images/image-20230826152630680.png)
+![image-20230826152630680](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826152630680.png)
 
 #### 补充用户注册校验逻辑
 
@@ -813,45 +812,45 @@ public User getSafetyUser(User user) {
 
 1. 修改登录页面版权信息
 
-![image-20230826202752567](images/image-20230826202752567.png)
+![image-20230826202752567](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826202752567.png)
 
-![image-20230826202926935](images/image-20230826202926935.png)
+![image-20230826202926935](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826202926935.png)
 
-![image-20230826202948975](images/image-20230826202948975.png)
+![image-20230826202948975](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826202948975.png)
 
 2. 修改logo，主标题，副标题
 
-![image-20230826210048372](images/image-20230826210048372.png)
+![image-20230826210048372](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826210048372.png)
 
 #### 删除多余代码（蓝色区域即删除区域）
 
-![image-20230826210459209](images/image-20230826210459209.png)
+![image-20230826210459209](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826210459209.png)
 
- ![image-20230826210607115](images/image-20230826210607115.png)
+ ![image-20230826210607115](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826210607115.png)
 
-![image-20230826210701070](images/image-20230826210701070.png)
+![image-20230826210701070](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826210701070.png)
 
 修改内容
 
-![image-20230826210944934](images/image-20230826210944934.png)
+![image-20230826210944934](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826210944934.png)
 
-  ![image-20230826211526616](images/image-20230826211526616.png)
+  ![image-20230826211526616](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826211526616.png)
 
-![image-20230826211943311](images/image-20230826211943311.png)
+![image-20230826211943311](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826211943311.png)
 
 #### 实现用户登录
 
 1. 修改参数
 
-![image-20230826213122509](images/image-20230826213122509.png)
+![image-20230826213122509](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826213122509.png)
 
-![image-20230826212931609](images/image-20230826212931609.png)
+![image-20230826212931609](https://github.com/1ranxu/userCenter-image/blob/main/image-20230826212931609.png)
 
-![image-20230827113002894](images/image-20230827113002894.png)
+![image-20230827113002894](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827113002894.png)
 
 2. 配置路径前缀，修改请求路径
 
-![image-20230827160401540](images/image-20230827160401540.png)
+![image-20230827160401540](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827160401540.png)
 
 使用代理解决跨域问题（前端服务器不能直接访问后端服务器）
 
@@ -859,91 +858,91 @@ public User getSafetyUser(User user) {
 
 反向代理：前端服务器请求代理服务器，代理服务器把请求负载均衡到多台后端服务器中的一台
 
-![image-20230827110713744](images/image-20230827110713744.png)
+![image-20230827110713744](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827110713744.png)
 
-![image-20230827105115174](images/image-20230827105115174.png)
+![image-20230827105115174](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827105115174.png)
 
 #### 实现用户注册
 
 1. 添加注册组件
 
-![image-20230827145244471](images/image-20230827145244471.png)
+![image-20230827145244471](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827145244471.png)
 
 2. 修改组件名称为Register
 
-![image-20230827150047564](images/image-20230827150047564.png)
+![image-20230827150047564](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827150047564.png)
 
 3. 添加注册路由
 
-![image-20230827150812170](images/image-20230827150812170.png)
+![image-20230827150812170](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827150812170.png)
 
 	4. 防止在发起注册请求时，因为Ant Design Pro后台管理系统的特性（用户未登录，会跳到登录页），重定向到登录页
 
-![image-20230827164239848](images/image-20230827164239848.png)
+![image-20230827164239848](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827164239848.png)
 
-![image-20230827164706326](images/image-20230827164706326.png)
+![image-20230827164706326](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827164706326.png)
 
 5. 删除Register中不需要的代码 
 
-![image-20230827165056030](images/image-20230827165056030.png)
+![image-20230827165056030](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827165056030.png)
 
-![image-20230827165206856](images/image-20230827165206856.png)
+![image-20230827165206856](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827165206856.png)
 
 6. 修改注册页面
 
-![image-20230827165530308](images/image-20230827165530308.png)
+![image-20230827165530308](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827165530308.png)
 
-![image-20230827165815220](images/image-20230827165815220.png)
+![image-20230827165815220](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827165815220.png)
 
-![image-20230827170736607](images/image-20230827170736607.png)
+![image-20230827170736607](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827170736607.png)
 
-![image-20230827173044311](images/image-20230827173044311.png)
+![image-20230827173044311](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827173044311.png)
 
-![image-20230827173216898](images/image-20230827173216898.png)
+![image-20230827173216898](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827173216898.png)
 
-![image-20230827172928441](images/image-20230827172928441.png)
+![image-20230827172928441](https://github.com/1ranxu/userCenter-image/blob/main/image-20230827172928441.png)
 
 7. 修改注册参数
 
-![image-20230828202350614](images/image-20230828202350614.png)
+![image-20230828202350614](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828202350614.png)
 
-![image-20230828202702537](images/image-20230828202702537.png)
+![image-20230828202702537](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828202702537.png)
 
-![image-20230828203037682](images/image-20230828203037682.png)
+![image-20230828203037682](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828203037682.png)
 
 8. 校验两次输入的密码是否一致
 
-![image-20230828204728656](images/image-20230828204728656.png)
+![image-20230828204728656](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828204728656.png)
 
 9. 编写注册请求函数register
 
-![image-20230828205157290](images/image-20230828205157290.png)
+![image-20230828205157290](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828205157290.png)
 
-![image-20230828205602965](images/image-20230828205602965.png)
+![image-20230828205602965](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828205602965.png)
 
-![image-20230828205927539](images/image-20230828205927539.png)
+![image-20230828205927539](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828205927539.png)
 
 10. 简单修改一下逻辑，把和注册无关的全去掉
 
-![image-20230828213426342](images/image-20230828213426342.png)
+![image-20230828213426342](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828213426342.png)
 
 11. 在Login组件中添加新用户注册的链接
 
-![image-20230828215749708](images/image-20230828215749708.png)
+![image-20230828215749708](https://github.com/1ranxu/userCenter-image/blob/main/image-20230828215749708.png)
 
 #### 补充用户注册校验逻辑
 
 前端补充一个输入框，适配后端
 
-![image-20230831165915043](images/image-20230831165915043.png)
+![image-20230831165915043](https://github.com/1ranxu/userCenter-image/blob/main/image-20230831165915043.png)
 
-![image-20230831170038037](images/image-20230831170038037.png)
+![image-20230831170038037](https://github.com/1ranxu/userCenter-image/blob/main/image-20230831170038037.png)
 
-![image-20230831170126149](images/image-20230831170126149.png)
+![image-20230831170126149](https://github.com/1ranxu/userCenter-image/blob/main/image-20230831170126149.png)
 
-![image-20230831170313046](images/image-20230831170313046.png)
+![image-20230831170313046](https://github.com/1ranxu/userCenter-image/blob/main/image-20230831170313046.png)
 
-![image-20230831170407583](images/image-20230831170407583.png)
+![image-20230831170407583](https://github.com/1ranxu/userCenter-image/blob/main/image-20230831170407583.png)
 
 
 
@@ -951,7 +950,7 @@ public User getSafetyUser(User user) {
 
 ### 后端
 
-#### 实现用户管理逻辑（查询用户images/删除用户）
+#### 实现用户管理逻辑（查询用户/删除用户）
 
 ##### 查询用户
 
@@ -1041,25 +1040,25 @@ public User getCurrentUser(HttpServletRequest request) {
 
 #### 获取用户的登录态
 
-![image-20230829152444642](images/image-20230829152444642.png)
+![image-20230829152444642](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829152444642.png)
 
-![image-20230829151151152](images/image-20230829151151152.png)
+![image-20230829151151152](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829151151152.png)
 
-![image-20230829152855521](images/image-20230829152855521.png)
+![image-20230829152855521](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829152855521.png)
 
-![image-20230829153130302](images/image-20230829153130302.png)
+![image-20230829153130302](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829153130302.png)
 
-![image-20230829153316330](images/image-20230829153316330.png)
+![image-20230829153316330](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829153316330.png)
 
-![image-20230829153855963](images/image-20230829153855963.png)
+![image-20230829153855963](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829153855963.png)
 
-![image-20230829154757013](images/image-20230829154757013.png)
+![image-20230829154757013](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829154757013.png)
 
-![image-20230829155441141](images/image-20230829155441141.png)
+![image-20230829155441141](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829155441141.png)
 
-![image-20230829155605446](images/image-20230829155605446.png)
+![image-20230829155605446](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829155605446.png)
 
-![image-20230829155851564](images/image-20230829155851564.png)
+![image-20230829155851564](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829155851564.png)
 
 
 
@@ -1067,41 +1066,41 @@ public User getCurrentUser(HttpServletRequest request) {
 
 1. 创建用户管理组件
 
-![image-20230829164933329](images/image-20230829164933329.png)
+![image-20230829164933329](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829164933329.png)
 
 2. 添加用户管理组件的路由
 
-![image-20230829165641589](images/image-20230829165641589.png)
+![image-20230829165641589](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829165641589.png)
 
-![image-20230829170556007](images/image-20230829170556007.png)
+![image-20230829170556007](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829170556007.png)
 
-![image-20230829170914844](images/image-20230829170914844.png)
+![image-20230829170914844](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829170914844.png)
 
 3. 鉴权
 
-![image-20230829172315282](images/image-20230829172315282.png)
+![image-20230829172315282](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829172315282.png)
 
-![image-20230829172931058](images/image-20230829172931058.png)
+![image-20230829172931058](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829172931058.png)
 
 4. 修改用户管理界面（组件）
 
-![image-20230829195153621](images/image-20230829195153621.png)
+![image-20230829195153621](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829195153621.png)
 
-![image-20230829194804304](images/image-20230829194804304.png)
+![image-20230829194804304](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829194804304.png)
 
-![image-20230829195525242](images/image-20230829195525242.png)
+![image-20230829195525242](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829195525242.png)
 
-![image-20230829195348355](images/image-20230829195348355.png)
+![image-20230829195348355](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829195348355.png)
 
-![image-20230829195616263](images/image-20230829195616263.png)
+![image-20230829195616263](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829195616263.png)
 
 5. 删除高级表格中不需要的东西
 
-![image-20230829200755780](images/image-20230829200755780.png)
+![image-20230829200755780](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829200755780.png)
 
-![image-20230829201508416](images/image-20230829201508416.png)
+![image-20230829201508416](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829201508416.png)
 
-![image-20230829202841848](images/image-20230829202841848.png)
+![image-20230829202841848](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829202841848.png)
 
 6. 对高级表格中的列进行修改
 
@@ -1118,25 +1117,25 @@ public User getCurrentUser(HttpServletRequest request) {
 
    
 
-![image-20230829201224664](images/image-20230829201224664.png)
+![image-20230829201224664](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829201224664.png)
 
-![image-20230829204048662](images/image-20230829204048662.png)
+![image-20230829204048662](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829204048662.png)
 
-![image-20230829204126646](images/image-20230829204126646.png)
+![image-20230829204126646](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829204126646.png)
 
-![image-20230829204249708](images/image-20230829204249708.png)
+![image-20230829204249708](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829204249708.png)
 
-![image-20230829205811888](images/image-20230829205811888.png)
+![image-20230829205811888](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829205811888.png)
 
-![image-20230829210016768](images/image-20230829210016768.png)
+![image-20230829210016768](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829210016768.png)
 
-![image-20230829210057777](images/image-20230829210057777.png)
+![image-20230829210057777](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829210057777.png)
 
-![image-20230829213127408](images/image-20230829213127408.png)
+![image-20230829213127408](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829213127408.png)
 
-![image-20230829213403531](images/image-20230829213403531.png)
+![image-20230829213403531](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829213403531.png)
 
-![image-20230829215732155](images/image-20230829215732155.png)
+![image-20230829215732155](https://github.com/1ranxu/userCenter-image/blob/main/image-20230829215732155.png)
 
 ## 用户注销
 
@@ -1173,13 +1172,13 @@ public Integer userLogout(HttpServletRequest request) {
 
 ### 前端
 
-![image-20230830211924927](images/image-20230830211924927.png)
+![image-20230830211924927](https://github.com/1ranxu/userCenter-image/blob/main/image-20230830211924927.png)
 
-![image-20230830212557790](images/image-20230830212557790.png)
+![image-20230830212557790](https://github.com/1ranxu/userCenter-image/blob/main/image-20230830212557790.png)
 
-![image-20230830212910796](images/image-20230830212910796.png)
+![image-20230830212910796](https://github.com/1ranxu/userCenter-image/blob/main/image-20230830212910796.png)
 
-![image-20230830212955788](images/image-20230830212955788.png)
+![image-20230830212955788](https://github.com/1ranxu/userCenter-image/blob/main/image-20230830212955788.png)
 
 ## 前后端代码优化
 
@@ -1332,7 +1331,7 @@ public class Result implements Serializable {
    作用：
 
    1. 相对于 java 的异常类，支持更多字段
-   2. 自定义构造函数，更灵活 images/ 快捷的设置字段
+   2. 自定义构造函数，更灵活 / 快捷的设置字段
 
 ```java
 package com.luoying.exception;
@@ -1734,13 +1733,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
 #### 对接后端的返回值，取 data
 
-![image-20230901145204874](images/image-20230901145204874.png)
+![image-20230901145204874](https://github.com/1ranxu/userCenter-image/blob/main/image-20230901145204874.png)
 
 1. 对接注册的返回值
 
-![image-20230901145447006](images/image-20230901145447006.png)
+![image-20230901145447006](https://github.com/1ranxu/userCenter-image/blob/main/image-20230901145447006.png)
 
-![image-20230901145917328](images/image-20230901145917328.png)
+![image-20230901145917328](https://github.com/1ranxu/userCenter-image/blob/main/image-20230901145917328.png)
 
 2. 全局响应处理：
 
@@ -1748,7 +1747,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
 ​		优势：不用在每个接口请求中都去写相同的逻辑，就比前面对接注册的返回值
 
-​		实现：参考你用的请求封装工具的官方文档，比如 umi-request（https:images/images/github.comimages/umijsimages/umi-request#interceptor、https:images/images/blog.csdn.netimages/huantai3334images/articleimages/detailsimages/116780020
+​		实现：参考你用的请求封装工具的官方文档，比如 umi-request（https://github.com/umijs/umi-request#interceptor、https://blog.csdn.net/huantai3334/article/details/116780020
 
 ）如果你用 **axios**，参考 axios 的文档。创建新的文件，在该文件中配置一个全局请求类。在发送请求时，使用我们自己的定义的全局请求类。
 
@@ -1802,28 +1801,28 @@ request.interceptors.response.use(async (response, options): Promise<any> => {
 export default request;
 ```
 
-![image-20230901220459363](images/image-20230901220459363.png)
+![image-20230901220459363](https://github.com/1ranxu/userCenter-image/blob/main/image-20230901220459363.png)
 
-![image-20230901220714957](images/image-20230901220714957.png)
+![image-20230901220714957](https://github.com/1ranxu/userCenter-image/blob/main/image-20230901220714957.png)
 
-![image-20230901221727720](images/image-20230901221727720.png)
+![image-20230901221727720](https://github.com/1ranxu/userCenter-image/blob/main/image-20230901221727720.png)
 
 ## 部署
 
 ### 多环境
 
-[多环境设计_程序员鱼皮的博客-CSDN博客](https:images/images/blog.csdn.netimages/weixin_41701290images/articleimages/detailsimages/120173283)
+[多环境设计_程序员鱼皮的博客-CSDN博客](https://blog.csdn.net/weixin_41701290/article/details/120173283)
 
 多环境：指同一套项目代码在不同的阶段需要根据实际情况来调整配置并且部署到不同的机器上。
 
 为什么需要？
 
 1. 每个环境互不影响
-2. 区分不同的阶段：开发 images/ 测试 images/ 生产
+2. 区分不同的阶段：开发 / 测试 / 生产
 3. 对项目进行优化：
    1. 本地日志级别
    2. 精简依赖，节省项目体积
-   3. 项目的环境 images/ 参数可以调整，比如 JVM 参数
+   3. 项目的环境 / 参数可以调整，比如 JVM 参数
 
 针对不同环境做不同的事情。
 
@@ -1833,7 +1832,7 @@ export default request;
 
 1. 本地环境（自己的电脑）localhost
 2. 开发环境（远程开发）大家连同一台机器，为了大家开发方便
-3. 测试环境（测试）开发 images/ 测试 images/ 产品，单元测试 images/ 性能测试 images/ 功能测试 images/ 系统集成测试，独立的数据库、独立的服务器
+3. 测试环境（测试）开发 / 测试 / 产品，单元测试 / 性能测试 / 功能测试 / 系统集成测试，独立的数据库、独立的服务器
 4. 预发布环境（体验服）：和正式环境一致，正式数据库，更严谨，查出更多问题
 5. 正式环境（线上，公开对外访问的项目）：尽量不要改动，保证上线前的代码是 “完美” 运行
 6. 沙箱环境（实验环境）：为了做实验
@@ -1866,17 +1865,17 @@ export default request;
 
    2. 线上环境：npm run build（项目构建打包），可以使用 serve 工具启动（使用npm i -g serve来安装）
 
-      ![image-20230902150058755](images/image-20230902150058755.png)
+      ![image-20230902150058755](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902150058755.png)
 
-      ![image-20230902150144328](images/image-20230902150144328.png)
+      ![image-20230902150144328](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902150144328.png)
 
-      ![image-20230902150237904](images/image-20230902150237904-16936381592733.png)
+      ![image-20230902150237904](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902150237904-16936381592733.png)
 
-      ![image-20230905154740428](images/image-20230905154740428.png)
+      ![image-20230905154740428](https://github.com/1ranxu/userCenter-image/blob/main/image-20230905154740428.png)
 
 3. 项目的配置
 
-   不同的项目（框架）都有不同的配置文件，umi 的配置文件是 config，可以在配置文件后添加对应的环境名称后缀来区分开发环境和生产环境。参考文档：https:images/images/umijs.orgimages/zh-CNimages/docsimages/deployment
+   不同的项目（框架）都有不同的配置文件，umi 的配置文件是 config，可以在配置文件后添加对应的环境名称后缀来区分开发环境和生产环境。参考文档：https://umijs.org/zh-CN/docs/deployment
 
    1. 开发环境：config.dev.ts
    2. 生产环境：config.prod.ts
@@ -1886,11 +1885,11 @@ export default request;
 
 1. 保存建表sql
 
-![image-20230902155336263](images/image-20230902155336263.png)
+![image-20230902155336263](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902155336263.png)
 
 2. 在远程服务器上准备一台数据库，并连接
 
-![image-20230902155429937](images/image-20230902155429937.png)
+![image-20230902155429937](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902155429937.png)
 
 3. 把本地的数据库复制到远程数据库
 
@@ -1924,31 +1923,31 @@ export default request;
 
    2. 如果表中数据也要复制，建议就忽略第一步，直接在navicat上操作
 
-   ![image-20230902160340463](images/image-20230902160340463.png)
+   ![image-20230902160340463](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902160340463.png)
 
-   ![image-20230902160440472](images/image-20230902160440472.png)
+   ![image-20230902160440472](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902160440472.png)
 
-   ![image-20230902160512593](images/image-20230902160512593.png)
+   ![image-20230902160512593](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902160512593.png)
 
 4. 修改配置文件
 
    1. 公共配置
 
-      ![image-20230905154816416](images/image-20230905154816416.png)
+      ![image-20230905154816416](https://github.com/1ranxu/userCenter-image/blob/main/image-20230905154816416.png)
 
    2. 生产配置
 
-      ![image-20230905154952980](images/image-20230905154952980.png)
+      ![image-20230905154952980](https://github.com/1ranxu/userCenter-image/blob/main/image-20230905154952980.png)
 
    3. 开发配置
 
-      ![image-20230905155027964](images/image-20230905155027964.png)
+      ![image-20230905155027964](https://github.com/1ranxu/userCenter-image/blob/main/image-20230905155027964.png)
 
 5. 打包
 
-   ![image-20230902164625755](images/image-20230902164625755.png)
+   ![image-20230902164625755](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902164625755.png)
 
-   ![image-20230902164651437](images/image-20230902164651437.png)
+   ![image-20230902164651437](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902164651437.png)
 
    6. 启动项目
 
@@ -1961,9 +1960,9 @@ export default request;
       java -jar .\userCenter-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
       ```
 
-      ![image-20230902165011544](images/image-20230902165011544.png)
+      ![image-20230902165011544](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902165011544.png)
 
-      ![image-20230902165319246](images/image-20230902165319246.png)	
+      ![image-20230902165319246](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902165319246.png)	
 
 主要是改：
 
@@ -1981,7 +1980,7 @@ export default request;
 
 ### 项目部署上线
 
-准备一台Linux服务器（CentOS 8 images/ 7.6以上），没钱买就用虚拟机
+准备一台Linux服务器（CentOS 8 / 7.6以上），没钱买就用虚拟机
 
 #### 原始部署	
 
@@ -1991,17 +1990,17 @@ export default request;
 
    2. 上传前端项目
 
-      ![image-20230902175204687](images/image-20230902175204687.png)
+      ![image-20230902175204687](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902175204687.png)
 
-      ![image-20230902175310433](images/image-20230902175310433.png)
+      ![image-20230902175310433](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902175310433.png)
 
    3. 配置网页路径
 
-      ![image-20230902180347579](images/image-20230902180347579.png)
+      ![image-20230902180347579](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902180347579.png)
 
-      ![image-20230902180722638](images/image-20230902180722638.png)
+      ![image-20230902180722638](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902180722638.png)
 
-      ![image-20230902181001159](images/image-20230902181001159.png)
+      ![image-20230902181001159](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902181001159.png)
 
 2. **后端**
 
@@ -2009,15 +2008,15 @@ export default request;
 
    2. 上传后端项目jar包到服务器
 
-      ![image-20230902181813560](images/image-20230902181813560.png)
+      ![image-20230902181813560](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902181813560.png)
 
-      ![image-20230902183452534](images/image-20230902183452534.png)
+      ![image-20230902183452534](https://github.com/1ranxu/userCenter-image/blob/main/image-20230902183452534.png)
 
 #### 宝塔Linux部署
 
 Linux 运维面板
 
-官方安装教程：https:images/images/www.bt.cnimages/newimages/download.html
+官方安装教程：https://www.bt.cn/new/download.html
 
 方便管理服务器、方便安装软件
 
@@ -2037,7 +2036,7 @@ Dockerfile 编写：
 - WORKDIR 工作目录
 - COPY 从本机复制文件
 - RUN 执行命令
-- CMD images/ ENTRYPOINT（附加额外参数）指定运行容器时默认执行的命令
+- CMD / ENTRYPOINT（附加额外参数）指定运行容器时默认执行的命令
 
 ```dockerfile
 FROM maven:3.5-jdk-8-alpine
@@ -2100,7 +2099,7 @@ Docker 构建优化：减少尺寸、减少构建时间（比如多阶段构建�
 #### 容器平台
 
 1. 云服务商的容器平台（腾讯云、阿里云）
-2. 面向某个领域的容器平台（前端 images/ 后端微信云托管）**要花钱！**
+2. 面向某个领域的容器平台（前端 / 后端微信云托管）**要花钱！**
 
 
 
@@ -2113,7 +2112,7 @@ Docker 构建优化：减少尺寸、减少构建时间（比如多阶段构建�
 
 ### 绑定域名
 
-前端项目访问：用户输入网址 => 域名解析服务器（把网址解析为 ip 地址 images/ 交给其他的域名解析服务） => 
+前端项目访问：用户输入网址 => 域名解析服务器（把网址解析为 ip 地址 / 交给其他的域名解析服务） => 
 
 服务器 =>（防火墙）=> nginx 接收请求，找到对应的文件，返回文件给前端 => 前端加载文件到浏览器中（js、css） => 渲染页面
 
@@ -2163,7 +2162,7 @@ nginx 反向代理：替服务器接收请求，转发请求
 
 3. 修改后端服务
 
-   1. 在Controller上配置 @CrossOrigin 注解（**origins**的值就是发起跨域请求的域名**{"http:images/images/192.168.253.128:80"}**，**methods**就是请求方式**{RequestMethod.GET,RequestMethod.POST}**,**allowCredentials**=**true**）
+   1. 在Controller上配置 @CrossOrigin 注解（**origins**的值就是发起跨域请求的域名**{"http://192.168.253.128:80"}**，**methods**就是请求方式**{RequestMethod.GET,RequestMethod.POST}**,**allowCredentials**=**true**）
 
    2. 添加 web 全局请求拦截器
 
@@ -2188,7 +2187,7 @@ nginx 反向代理：替服务器接收请求，转发请求
       } 
       ```
 
-   3. 定义新的 corsFilter Bean，参考：https:images/images/www.jianshu.comimages/pimages/b02099a435bd
+   3. 定义新的 corsFilter Bean，参考：https://www.jianshu.com/p/b02099a435bd
 
 ## 用户中心项目扩展和规划
 
@@ -2203,3 +2202,13 @@ nginx 反向代理：替服务器接收请求，转发请求
    1. set-cookie domain 域名更通用，比如改为 *.xxx.com
    2. 把用户管理系统 => 用户中心（之后所有的服务都请求这个后端）
 5. 后台添加全局请求拦截器（统一去判断用户权限、统一记录请求日志）
+
+
+
+ 
+
+
+
+
+
+ 
