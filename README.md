@@ -142,7 +142,7 @@
 
 2. [安装 | Yarn 中文文档 (bootcss.com)](https://yarn.bootcss.com/docs/install.html#windows-stable)
 
-   ![image-20230822204457808](1ranxu/userCenter-image/image-20230822204457808.png)
+   ![image-20230822204457808](../1ranxu/userCenter-image/image-20230822204457808.png)
 
 
 
@@ -154,13 +154,13 @@
 
 #### 使用yarn包管理器安装依赖
 
-![image-20230822220825939](1ranxu/userCenter-image/image-20230822220825939.png)
+![image-20230822220825939](../1ranxu/userCenter-image/image-20230822220825939.png)
 
 #### 启动
 
-![image-20230822224336905](1ranxu/userCenter-image/image-20230822224336905.png)
+![image-20230822224336905](../1ranxu/userCenter-image/image-20230822224336905.png)
 
-![image-20230822224409132](1ranxu/userCenter-image/image-20230822224409132.png)
+![image-20230822224409132](../1ranxu/userCenter-image/image-20230822224409132.png)
 
 #### 开启Umi UI
 
@@ -168,41 +168,41 @@
  yarn add @umijs/preset-ui -D
 ```
 
-![image-20230823134025299](1ranxu/userCenter-image/image-20230823134025299.png)
+![image-20230823134025299](../1ranxu/userCenter-image/image-20230823134025299.png)
 
 #### 使用Umi UI添加分析页模板到项目 
 
-![image-20230823134829152](1ranxu/userCenter-image/image-20230823134829152.png)
+![image-20230823134829152](../1ranxu/userCenter-image/image-20230823134829152.png)
 
 #### 项目瘦身(去除Ant Design Pro中用不到的默认的功能的代码)
 
 ##### 去除国际化
 
-![image-20230823140950973](1ranxu/userCenter-image/image-20230823140950973.png)
+![image-20230823140950973](../1ranxu/userCenter-image/image-20230823140950973.png)
 
-![image-20230823142003411](1ranxu/userCenter-image/image-20230823142003411.png)
+![image-20230823142003411](../1ranxu/userCenter-image/image-20230823142003411.png)
 
 ##### 去除集成测试
 
-![image-20230823142515370](1ranxu/userCenter-image/image-20230823142515370.png)
+![image-20230823142515370](../1ranxu/userCenter-image/image-20230823142515370.png)
 
 ##### 去除分析页
 
-![image-20230823142642984](1ranxu/userCenter-image/image-20230823142642984.png)
+![image-20230823142642984](../1ranxu/userCenter-image/image-20230823142642984.png)
 
 ##### 去除分析页路由
 
-![image-20230823142927368](1ranxu/userCenter-image/image-20230823142927368.png)
+![image-20230823142927368](../1ranxu/userCenter-image/image-20230823142927368.png)
 
 ##### 去除接口文档工具
 
-![image-20230823143119074](1ranxu/userCenter-image/image-20230823143119074.png)
+![image-20230823143119074](../1ranxu/userCenter-image/image-20230823143119074.png)
 
 ##### 去除测试
 
-![image-20230823200238377](1ranxu/userCenter-image/image-20230823200238377.png)
+![image-20230823200238377](../1ranxu/userCenter-image/image-20230823200238377.png)
 
-![image-20230823200757807](1ranxu/userCenter-image/image-20230823200757807.png)
+![image-20230823200757807](../1ranxu/userCenter-image/image-20230823200757807.png)
 
 ### 后端初始化
 
@@ -274,7 +274,7 @@ create table user_center.user
 
 #### 规整项目目录
 
-![image-20230824200929227](1ranxu/userCenter-image/image-20230824200929227.png)
+![image-20230824200929227](../1ranxu/userCenter-image/image-20230824200929227.png)
 
 #### 实现基本的数据库操作（操作User表）
 
@@ -288,29 +288,29 @@ create table user_center.user
 
    建议使用MybatisX插件自动根据数据库生成，减少重复工作
 
-![image-20230824171617887](1ranxu/userCenter-image/image-20230824171617887.png)
+![image-20230824171617887](../1ranxu/userCenter-image/image-20230824171617887.png)
 
-![image-20230824171748781](1ranxu/userCenter-image/image-20230824171748781.png)
+![image-20230824171748781](../1ranxu/userCenter-image/image-20230824171748781.png)
 
-![image-20230824202022420](1ranxu/userCenter-image/image-20230824202022420.png)
+![image-20230824202022420](../1ranxu/userCenter-image/image-20230824202022420.png)
 
 把generator中自动生成的文件放到对应的包下面
 
-![image-20230824202906943](1ranxu/userCenter-image/image-20230824202906943.png)
+![image-20230824202906943](../1ranxu/userCenter-image/image-20230824202906943.png)
 
   4. 为UserService创建一个测试类
 
      鼠标点击接口类名UserService，使用快捷键Alt + Enter，选择Create Test
 
-     ![image-20230824203336761](1ranxu/userCenter-image/image-20230824203336761.png)
+     ![image-20230824203336761](../1ranxu/userCenter-image/image-20230824203336761.png)
 
-     ![image-20230824203504937](1ranxu/userCenter-image/image-20230824203504937.png)
+     ![image-20230824203504937](../1ranxu/userCenter-image/image-20230824203504937.png)
 
      使用GenerateAllSetter插件帮助快速生成所有set方法
 
      鼠标点击user对象，使用快捷键Alt +Enter 
 
-     ![image-20230824205129488](1ranxu/userCenter-image/image-20230824205129488.png)
+     ![image-20230824205129488](../1ranxu/userCenter-image/image-20230824205129488.png)
 
      `踩坑`：因为Mybatis-Plus会自动把User实体对象中的驼峰属性名，转换成下划线连接的字段，然后执行sql，但我们的字段也是驼峰，所以会报错。可以在application.yml中把修改配置，关掉自动转换。从这点可以看出，我们不用把表字段特意设计成驼峰，字段中的单词就用下划线连接，Mybatis会帮我们自动开启转换，也就不用写下面的配置。
 
@@ -322,7 +322,7 @@ create table user_center.user
 
      [使用配置 | MyBatis-Plus (baomidou.com)](https://baomidou.com/pages/56bac0/#mapunderscoretocamelcase)
 
-     ![image-20230824211655691](1ranxu/userCenter-image/image-20230824211655691.png)
+     ![image-20230824211655691](../1ranxu/userCenter-image/image-20230824211655691.png)
 
 #### 实现注册逻辑
 
@@ -516,7 +516,7 @@ public User getSafetyUser(User user) {
 
 使用GenerateSerialVersionUID插件给UserRegisterRequest类生成一个序列化Id，防止序列化时产生冲突。使用快捷键Alt + Insert
 
-![image-20230826143454136](1ranxu/userCenter-image/image-20230826143454136.png)
+![image-20230826143454136](../1ranxu/userCenter-image/image-20230826143454136.png)
 
 ```java
 package com.luoying.model.request;
@@ -665,19 +665,19 @@ public class UserController {
 
 使用IDEA自带的请求工具，向服务器发请求，搭配断点排错
 
-![image-20230826152416228](1ranxu/userCenter-image/image-20230826152416228.png)
+![image-20230826152416228](../1ranxu/userCenter-image/image-20230826152416228.png)
 
 也可点击绿色图标来发请求 
 
-![image-20230826152748975](1ranxu/userCenter-image/image-20230826152748975.png)
+![image-20230826152748975](../1ranxu/userCenter-image/image-20230826152748975.png)
 
 发请求
 
-![image-20230826152456817](1ranxu/userCenter-image/image-20230826152456817.png)
+![image-20230826152456817](../1ranxu/userCenter-image/image-20230826152456817.png)
 
 查看返回结果
 
-![image-20230826152630680](1ranxu/userCenter-image/image-20230826152630680.png)
+![image-20230826152630680](../1ranxu/userCenter-image/image-20230826152630680.png)
 
 #### 补充用户注册校验逻辑
 
@@ -813,45 +813,45 @@ public User getSafetyUser(User user) {
 
 1. 修改登录页面版权信息
 
-![image-20230826202752567](1ranxu/userCenter-image/image-20230826202752567.png)
+![image-20230826202752567](../1ranxu/userCenter-image/image-20230826202752567.png)
 
-![image-20230826202926935](1ranxu/userCenter-image/image-20230826202926935.png)
+![image-20230826202926935](../1ranxu/userCenter-image/image-20230826202926935.png)
 
-![image-20230826202948975](1ranxu/userCenter-image/image-20230826202948975.png)
+![image-20230826202948975](../1ranxu/userCenter-image/image-20230826202948975.png)
 
 2. 修改logo，主标题，副标题
 
-![image-20230826210048372](1ranxu/userCenter-image/image-20230826210048372.png)
+![image-20230826210048372](../1ranxu/userCenter-image/image-20230826210048372.png)
 
 #### 删除多余代码（蓝色区域即删除区域）
 
-![image-20230826210459209](1ranxu/userCenter-image/image-20230826210459209.png)
+![image-20230826210459209](../1ranxu/userCenter-image/image-20230826210459209.png)
 
- ![image-20230826210607115](1ranxu/userCenter-image/image-20230826210607115.png)
+ ![image-20230826210607115](../1ranxu/userCenter-image/image-20230826210607115.png)
 
-![image-20230826210701070](1ranxu/userCenter-image/image-20230826210701070.png)
+![image-20230826210701070](../1ranxu/userCenter-image/image-20230826210701070.png)
 
 修改内容
 
-![image-20230826210944934](1ranxu/userCenter-image/image-20230826210944934.png)
+![image-20230826210944934](../1ranxu/userCenter-image/image-20230826210944934.png)
 
-  ![image-20230826211526616](1ranxu/userCenter-image/image-20230826211526616.png)
+  ![image-20230826211526616](../1ranxu/userCenter-image/image-20230826211526616.png)
 
-![image-20230826211943311](1ranxu/userCenter-image/image-20230826211943311.png)
+![image-20230826211943311](../1ranxu/userCenter-image/image-20230826211943311.png)
 
 #### 实现用户登录
 
 1. 修改参数
 
-![image-20230826213122509](1ranxu/userCenter-image/image-20230826213122509.png)
+![image-20230826213122509](../1ranxu/userCenter-image/image-20230826213122509.png)
 
-![image-20230826212931609](1ranxu/userCenter-image/image-20230826212931609.png)
+![image-20230826212931609](../1ranxu/userCenter-image/image-20230826212931609.png)
 
-![image-20230827113002894](1ranxu/userCenter-image/image-20230827113002894.png)
+![image-20230827113002894](../1ranxu/userCenter-image/image-20230827113002894.png)
 
 2. 配置路径前缀，修改请求路径
 
-![image-20230827160401540](1ranxu/userCenter-image/image-20230827160401540.png)
+![image-20230827160401540](../1ranxu/userCenter-image/image-20230827160401540.png)
 
 使用代理解决跨域问题（前端服务器不能直接访问后端服务器）
 
@@ -859,91 +859,91 @@ public User getSafetyUser(User user) {
 
 反向代理：前端服务器请求代理服务器，代理服务器把请求负载均衡到多台后端服务器中的一台
 
-![image-20230827110713744](1ranxu/userCenter-image/image-20230827110713744.png)
+![image-20230827110713744](../1ranxu/userCenter-image/image-20230827110713744.png)
 
-![image-20230827105115174](1ranxu/userCenter-image/image-20230827105115174.png)
+![image-20230827105115174](../1ranxu/userCenter-image/image-20230827105115174.png)
 
 #### 实现用户注册
 
 1. 添加注册组件
 
-![image-20230827145244471](1ranxu/userCenter-image/image-20230827145244471.png)
+![image-20230827145244471](../1ranxu/userCenter-image/image-20230827145244471.png)
 
 2. 修改组件名称为Register
 
-![image-20230827150047564](1ranxu/userCenter-image/image-20230827150047564.png)
+![image-20230827150047564](../1ranxu/userCenter-image/image-20230827150047564.png)
 
 3. 添加注册路由
 
-![image-20230827150812170](1ranxu/userCenter-image/image-20230827150812170.png)
+![image-20230827150812170](../1ranxu/userCenter-image/image-20230827150812170.png)
 
 	4. 防止在发起注册请求时，因为Ant Design Pro后台管理系统的特性（用户未登录，会跳到登录页），重定向到登录页
 
-![image-20230827164239848](1ranxu/userCenter-image/image-20230827164239848.png)
+![image-20230827164239848](../1ranxu/userCenter-image/image-20230827164239848.png)
 
-![image-20230827164706326](1ranxu/userCenter-image/image-20230827164706326.png)
+![image-20230827164706326](../1ranxu/userCenter-image/image-20230827164706326.png)
 
 5. 删除Register中不需要的代码 
 
-![image-20230827165056030](1ranxu/userCenter-image/image-20230827165056030.png)
+![image-20230827165056030](../1ranxu/userCenter-image/image-20230827165056030.png)
 
-![image-20230827165206856](1ranxu/userCenter-image/image-20230827165206856.png)
+![image-20230827165206856](../1ranxu/userCenter-image/image-20230827165206856.png)
 
 6. 修改注册页面
 
-![image-20230827165530308](1ranxu/userCenter-image/image-20230827165530308.png)
+![image-20230827165530308](../1ranxu/userCenter-image/image-20230827165530308.png)
 
-![image-20230827165815220](1ranxu/userCenter-image/image-20230827165815220.png)
+![image-20230827165815220](../1ranxu/userCenter-image/image-20230827165815220.png)
 
-![image-20230827170736607](1ranxu/userCenter-image/image-20230827170736607.png)
+![image-20230827170736607](../1ranxu/userCenter-image/image-20230827170736607.png)
 
-![image-20230827173044311](1ranxu/userCenter-image/image-20230827173044311.png)
+![image-20230827173044311](../1ranxu/userCenter-image/image-20230827173044311.png)
 
-![image-20230827173216898](1ranxu/userCenter-image/image-20230827173216898.png)
+![image-20230827173216898](../1ranxu/userCenter-image/image-20230827173216898.png)
 
-![image-20230827172928441](1ranxu/userCenter-image/image-20230827172928441.png)
+![image-20230827172928441](../1ranxu/userCenter-image/image-20230827172928441.png)
 
 7. 修改注册参数
 
-![image-20230828202350614](1ranxu/userCenter-image/image-20230828202350614.png)
+![image-20230828202350614](../1ranxu/userCenter-image/image-20230828202350614.png)
 
-![image-20230828202702537](1ranxu/userCenter-image/image-20230828202702537.png)
+![image-20230828202702537](../1ranxu/userCenter-image/image-20230828202702537.png)
 
-![image-20230828203037682](1ranxu/userCenter-image/image-20230828203037682.png)
+![image-20230828203037682](../1ranxu/userCenter-image/image-20230828203037682.png)
 
 8. 校验两次输入的密码是否一致
 
-![image-20230828204728656](1ranxu/userCenter-image/image-20230828204728656.png)
+![image-20230828204728656](../1ranxu/userCenter-image/image-20230828204728656.png)
 
 9. 编写注册请求函数register
 
-![image-20230828205157290](1ranxu/userCenter-image/image-20230828205157290.png)
+![image-20230828205157290](../1ranxu/userCenter-image/image-20230828205157290.png)
 
-![image-20230828205602965](1ranxu/userCenter-image/image-20230828205602965.png)
+![image-20230828205602965](../1ranxu/userCenter-image/image-20230828205602965.png)
 
-![image-20230828205927539](1ranxu/userCenter-image/image-20230828205927539.png)
+![image-20230828205927539](../1ranxu/userCenter-image/image-20230828205927539.png)
 
 10. 简单修改一下逻辑，把和注册无关的全去掉
 
-![image-20230828213426342](1ranxu/userCenter-image/image-20230828213426342.png)
+![image-20230828213426342](../1ranxu/userCenter-image/image-20230828213426342.png)
 
 11. 在Login组件中添加新用户注册的链接
 
-![image-20230828215749708](1ranxu/userCenter-image/image-20230828215749708.png)
+![image-20230828215749708](../1ranxu/userCenter-image/image-20230828215749708.png)
 
 #### 补充用户注册校验逻辑
 
 前端补充一个输入框，适配后端
 
-![image-20230831165915043](1ranxu/userCenter-image/image-20230831165915043.png)
+![image-20230831165915043](../1ranxu/userCenter-image/image-20230831165915043.png)
 
-![image-20230831170038037](1ranxu/userCenter-image/image-20230831170038037.png)
+![image-20230831170038037](../1ranxu/userCenter-image/image-20230831170038037.png)
 
-![image-20230831170126149](1ranxu/userCenter-image/image-20230831170126149.png)
+![image-20230831170126149](../1ranxu/userCenter-image/image-20230831170126149.png)
 
-![image-20230831170313046](1ranxu/userCenter-image/image-20230831170313046.png)
+![image-20230831170313046](../1ranxu/userCenter-image/image-20230831170313046.png)
 
-![image-20230831170407583](1ranxu/userCenter-image/image-20230831170407583.png)
+![image-20230831170407583](../1ranxu/userCenter-image/image-20230831170407583.png)
 
 
 
@@ -1041,25 +1041,25 @@ public User getCurrentUser(HttpServletRequest request) {
 
 #### 获取用户的登录态
 
-![image-20230829152444642](1ranxu/userCenter-image/image-20230829152444642.png)
+![image-20230829152444642](../1ranxu/userCenter-image/image-20230829152444642.png)
 
-![image-20230829151151152](1ranxu/userCenter-image/image-20230829151151152.png)
+![image-20230829151151152](../1ranxu/userCenter-image/image-20230829151151152.png)
 
-![image-20230829152855521](1ranxu/userCenter-image/image-20230829152855521.png)
+![image-20230829152855521](../1ranxu/userCenter-image/image-20230829152855521.png)
 
-![image-20230829153130302](1ranxu/userCenter-image/image-20230829153130302.png)
+![image-20230829153130302](../1ranxu/userCenter-image/image-20230829153130302.png)
 
-![image-20230829153316330](1ranxu/userCenter-image/image-20230829153316330.png)
+![image-20230829153316330](../1ranxu/userCenter-image/image-20230829153316330.png)
 
-![image-20230829153855963](1ranxu/userCenter-image/image-20230829153855963.png)
+![image-20230829153855963](../1ranxu/userCenter-image/image-20230829153855963.png)
 
-![image-20230829154757013](1ranxu/userCenter-image/image-20230829154757013.png)
+![image-20230829154757013](../1ranxu/userCenter-image/image-20230829154757013.png)
 
-![image-20230829155441141](1ranxu/userCenter-image/image-20230829155441141.png)
+![image-20230829155441141](../1ranxu/userCenter-image/image-20230829155441141.png)
 
-![image-20230829155605446](1ranxu/userCenter-image/image-20230829155605446.png)
+![image-20230829155605446](../1ranxu/userCenter-image/image-20230829155605446.png)
 
-![image-20230829155851564](1ranxu/userCenter-image/image-20230829155851564.png)
+![image-20230829155851564](../1ranxu/userCenter-image/image-20230829155851564.png)
 
 
 
@@ -1067,41 +1067,41 @@ public User getCurrentUser(HttpServletRequest request) {
 
 1. 创建用户管理组件
 
-![image-20230829164933329](1ranxu/userCenter-image/image-20230829164933329.png)
+![image-20230829164933329](../1ranxu/userCenter-image/image-20230829164933329.png)
 
 2. 添加用户管理组件的路由
 
-![image-20230829165641589](1ranxu/userCenter-image/image-20230829165641589.png)
+![image-20230829165641589](../1ranxu/userCenter-image/image-20230829165641589.png)
 
-![image-20230829170556007](1ranxu/userCenter-image/image-20230829170556007.png)
+![image-20230829170556007](../1ranxu/userCenter-image/image-20230829170556007.png)
 
-![image-20230829170914844](1ranxu/userCenter-image/image-20230829170914844.png)
+![image-20230829170914844](../1ranxu/userCenter-image/image-20230829170914844.png)
 
 3. 鉴权
 
-![image-20230829172315282](1ranxu/userCenter-image/image-20230829172315282.png)
+![image-20230829172315282](../1ranxu/userCenter-image/image-20230829172315282.png)
 
-![image-20230829172931058](1ranxu/userCenter-image/image-20230829172931058.png)
+![image-20230829172931058](../1ranxu/userCenter-image/image-20230829172931058.png)
 
 4. 修改用户管理界面（组件）
 
-![image-20230829195153621](1ranxu/userCenter-image/image-20230829195153621.png)
+![image-20230829195153621](../1ranxu/userCenter-image/image-20230829195153621.png)
 
-![image-20230829194804304](1ranxu/userCenter-image/image-20230829194804304.png)
+![image-20230829194804304](../1ranxu/userCenter-image/image-20230829194804304.png)
 
-![image-20230829195525242](1ranxu/userCenter-image/image-20230829195525242.png)
+![image-20230829195525242](../1ranxu/userCenter-image/image-20230829195525242.png)
 
-![image-20230829195348355](1ranxu/userCenter-image/image-20230829195348355.png)
+![image-20230829195348355](../1ranxu/userCenter-image/image-20230829195348355.png)
 
-![image-20230829195616263](1ranxu/userCenter-image/image-20230829195616263.png)
+![image-20230829195616263](../1ranxu/userCenter-image/image-20230829195616263.png)
 
 5. 删除高级表格中不需要的东西
 
-![image-20230829200755780](1ranxu/userCenter-image/image-20230829200755780.png)
+![image-20230829200755780](../1ranxu/userCenter-image/image-20230829200755780.png)
 
-![image-20230829201508416](1ranxu/userCenter-image/image-20230829201508416.png)
+![image-20230829201508416](../1ranxu/userCenter-image/image-20230829201508416.png)
 
-![image-20230829202841848](1ranxu/userCenter-image/image-20230829202841848.png)
+![image-20230829202841848](../1ranxu/userCenter-image/image-20230829202841848.png)
 
 6. 对高级表格中的列进行修改
 
@@ -1118,25 +1118,25 @@ public User getCurrentUser(HttpServletRequest request) {
 
    
 
-![image-20230829201224664](1ranxu/userCenter-image/image-20230829201224664.png)
+![image-20230829201224664](../1ranxu/userCenter-image/image-20230829201224664.png)
 
-![image-20230829204048662](1ranxu/userCenter-image/image-20230829204048662.png)
+![image-20230829204048662](../1ranxu/userCenter-image/image-20230829204048662.png)
 
-![image-20230829204126646](1ranxu/userCenter-image/image-20230829204126646.png)
+![image-20230829204126646](../1ranxu/userCenter-image/image-20230829204126646.png)
 
-![image-20230829204249708](1ranxu/userCenter-image/image-20230829204249708.png)
+![image-20230829204249708](../1ranxu/userCenter-image/image-20230829204249708.png)
 
-![image-20230829205811888](1ranxu/userCenter-image/image-20230829205811888.png)
+![image-20230829205811888](../1ranxu/userCenter-image/image-20230829205811888.png)
 
-![image-20230829210016768](1ranxu/userCenter-image/image-20230829210016768.png)
+![image-20230829210016768](../1ranxu/userCenter-image/image-20230829210016768.png)
 
-![image-20230829210057777](1ranxu/userCenter-image/image-20230829210057777.png)
+![image-20230829210057777](../1ranxu/userCenter-image/image-20230829210057777.png)
 
-![image-20230829213127408](1ranxu/userCenter-image/image-20230829213127408.png)
+![image-20230829213127408](../1ranxu/userCenter-image/image-20230829213127408.png)
 
-![image-20230829213403531](1ranxu/userCenter-image/image-20230829213403531.png)
+![image-20230829213403531](../1ranxu/userCenter-image/image-20230829213403531.png)
 
-![image-20230829215732155](1ranxu/userCenter-image/image-20230829215732155.png)
+![image-20230829215732155](../1ranxu/userCenter-image/image-20230829215732155.png)
 
 ## 用户注销
 
@@ -1173,13 +1173,13 @@ public Integer userLogout(HttpServletRequest request) {
 
 ### 前端
 
-![image-20230830211924927](1ranxu/userCenter-image/image-20230830211924927.png)
+![image-20230830211924927](../1ranxu/userCenter-image/image-20230830211924927.png)
 
-![image-20230830212557790](1ranxu/userCenter-image/image-20230830212557790.png)
+![image-20230830212557790](../1ranxu/userCenter-image/image-20230830212557790.png)
 
-![image-20230830212910796](1ranxu/userCenter-image/image-20230830212910796.png)
+![image-20230830212910796](../1ranxu/userCenter-image/image-20230830212910796.png)
 
-![image-20230830212955788](1ranxu/userCenter-image/image-20230830212955788.png)
+![image-20230830212955788](../1ranxu/userCenter-image/image-20230830212955788.png)
 
 ## 前后端代码优化
 
@@ -1734,13 +1734,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
 #### 对接后端的返回值，取 data
 
-![image-20230901145204874](1ranxu/userCenter-image/image-20230901145204874.png)
+![image-20230901145204874](../1ranxu/userCenter-image/image-20230901145204874.png)
 
 1. 对接注册的返回值
 
-![image-20230901145447006](1ranxu/userCenter-image/image-20230901145447006.png)
+![image-20230901145447006](../1ranxu/userCenter-image/image-20230901145447006.png)
 
-![image-20230901145917328](1ranxu/userCenter-image/image-20230901145917328.png)
+![image-20230901145917328](../1ranxu/userCenter-image/image-20230901145917328.png)
 
 2. 全局响应处理：
 
@@ -1802,11 +1802,11 @@ request.interceptors.response.use(async (response, options): Promise<any> => {
 export default request;
 ```
 
-![image-20230901220459363](1ranxu/userCenter-image/image-20230901220459363.png)
+![image-20230901220459363](../1ranxu/userCenter-image/image-20230901220459363.png)
 
-![image-20230901220714957](1ranxu/userCenter-image/image-20230901220714957.png)
+![image-20230901220714957](../1ranxu/userCenter-image/image-20230901220714957.png)
 
-![image-20230901221727720](1ranxu/userCenter-image/image-20230901221727720.png)
+![image-20230901221727720](../1ranxu/userCenter-image/image-20230901221727720.png)
 
 ## 部署
 
@@ -1866,13 +1866,13 @@ export default request;
 
    2. 线上环境：npm run build（项目构建打包），可以使用 serve 工具启动（使用npm i -g serve来安装）
 
-      ![image-20230902150058755](1ranxu/userCenter-image/image-20230902150058755.png)
+      ![image-20230902150058755](../1ranxu/userCenter-image/image-20230902150058755.png)
 
-      ![image-20230902150144328](1ranxu/userCenter-image/image-20230902150144328.png)
+      ![image-20230902150144328](../1ranxu/userCenter-image/image-20230902150144328.png)
 
-      ![image-20230902150237904](1ranxu/userCenter-image/image-20230902150237904-16936381592733.png)
+      ![image-20230902150237904](../1ranxu/userCenter-image/image-20230902150237904-16936381592733.png)
 
-      ![image-20230905154740428](1ranxu/userCenter-image/image-20230905154740428.png)
+      ![image-20230905154740428](../1ranxu/userCenter-image/image-20230905154740428.png)
 
 3. 项目的配置
 
@@ -1886,11 +1886,11 @@ export default request;
 
 1. 保存建表sql
 
-![image-20230902155336263](1ranxu/userCenter-image/image-20230902155336263.png)
+![image-20230902155336263](../1ranxu/userCenter-image/image-20230902155336263.png)
 
 2. 在远程服务器上准备一台数据库，并连接
 
-![image-20230902155429937](1ranxu/userCenter-image/image-20230902155429937.png)
+![image-20230902155429937](../1ranxu/userCenter-image/image-20230902155429937.png)
 
 3. 把本地的数据库复制到远程数据库
 
@@ -1924,31 +1924,31 @@ export default request;
 
    2. 如果表中数据也要复制，建议就忽略第一步，直接在navicat上操作
 
-   ![image-20230902160340463](1ranxu/userCenter-image/image-20230902160340463.png)
+   ![image-20230902160340463](../1ranxu/userCenter-image/image-20230902160340463.png)
 
-   ![image-20230902160440472](1ranxu/userCenter-image/image-20230902160440472.png)
+   ![image-20230902160440472](../1ranxu/userCenter-image/image-20230902160440472.png)
 
-   ![image-20230902160512593](1ranxu/userCenter-image/image-20230902160512593.png)
+   ![image-20230902160512593](../1ranxu/userCenter-image/image-20230902160512593.png)
 
 4. 修改配置文件
 
    1. 公共配置
 
-      ![image-20230905154816416](1ranxu/userCenter-image/image-20230905154816416.png)
+      ![image-20230905154816416](../1ranxu/userCenter-image/image-20230905154816416.png)
 
    2. 生产配置
 
-      ![image-20230905154952980](1ranxu/userCenter-image/image-20230905154952980.png)
+      ![image-20230905154952980](../1ranxu/userCenter-image/image-20230905154952980.png)
 
    3. 开发配置
 
-      ![image-20230905155027964](1ranxu/userCenter-image/image-20230905155027964.png)
+      ![image-20230905155027964](../1ranxu/userCenter-image/image-20230905155027964.png)
 
 5. 打包
 
-   ![image-20230902164625755](1ranxu/userCenter-image/image-20230902164625755.png)
+   ![image-20230902164625755](../1ranxu/userCenter-image/image-20230902164625755.png)
 
-   ![image-20230902164651437](1ranxu/userCenter-image/image-20230902164651437.png)
+   ![image-20230902164651437](../1ranxu/userCenter-image/image-20230902164651437.png)
 
    6. 启动项目
 
@@ -1961,9 +1961,9 @@ export default request;
       java -jar .\userCenter-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
       ```
 
-      ![image-20230902165011544](1ranxu/userCenter-image/image-20230902165011544.png)
+      ![image-20230902165011544](../1ranxu/userCenter-image/image-20230902165011544.png)
 
-      ![image-20230902165319246](1ranxu/userCenter-image/image-20230902165319246.png)	
+      ![image-20230902165319246](../1ranxu/userCenter-image/image-20230902165319246.png)	
 
 主要是改：
 
@@ -1991,17 +1991,17 @@ export default request;
 
    2. 上传前端项目
 
-      ![image-20230902175204687](1ranxu/userCenter-image/image-20230902175204687.png)
+      ![image-20230902175204687](../1ranxu/userCenter-image/image-20230902175204687.png)
 
-      ![image-20230902175310433](1ranxu/userCenter-image/image-20230902175310433.png)
+      ![image-20230902175310433](../1ranxu/userCenter-image/image-20230902175310433.png)
 
    3. 配置网页路径
 
-      ![image-20230902180347579](1ranxu/userCenter-image/image-20230902180347579.png)
+      ![image-20230902180347579](../1ranxu/userCenter-image/image-20230902180347579.png)
 
-      ![image-20230902180722638](1ranxu/userCenter-image/image-20230902180722638.png)
+      ![image-20230902180722638](../1ranxu/userCenter-image/image-20230902180722638.png)
 
-      ![image-20230902181001159](1ranxu/userCenter-image/image-20230902181001159.png)
+      ![image-20230902181001159](../1ranxu/userCenter-image/image-20230902181001159.png)
 
 2. **后端**
 
@@ -2009,9 +2009,9 @@ export default request;
 
    2. 上传后端项目jar包到服务器
 
-      ![image-20230902181813560](1ranxu/userCenter-image/image-20230902181813560.png)
+      ![image-20230902181813560](../1ranxu/userCenter-image/image-20230902181813560.png)
 
-      ![image-20230902183452534](1ranxu/userCenter-image/image-20230902183452534.png)
+      ![image-20230902183452534](../1ranxu/userCenter-image/image-20230902183452534.png)
 
 #### 宝塔Linux部署
 
