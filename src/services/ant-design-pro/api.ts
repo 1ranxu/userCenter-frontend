@@ -42,9 +42,10 @@ export async function register(body: API.RegisterParams, options?: { [key: strin
   });
 }
 /** 搜素用户接口 /api/user/query */
-export async function userListQuery(options?: { [key: string]: any }) {
+export async function userListQuery(body: API.CurrentUser, options?: { [key: string]: any }) {
   return request<API.Result<API.CurrentUser[]>>('/api/user/query', {
-    method: 'GET',
+    method: 'POST',
+    data: body,
     ...(options || {}),
   });
 }
