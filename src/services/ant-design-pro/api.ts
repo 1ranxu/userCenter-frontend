@@ -1,9 +1,7 @@
 // @ts-ignore
 /* eslint-disable */
 
-import request from "@/plugins/globalRequest";
-
-
+import request from '@/plugins/globalRequest';
 
 /** 获取当前的用户 GET api/user/current */
 export async function currentUser(options?: { [key: string]: any }) {
@@ -50,6 +48,18 @@ export async function userListQuery(options?: { [key: string]: any }) {
     ...(options || {}),
   });
 }
+
+/** 管理员删除用户接口 /api/user/delete */
+export async function userDelete(body: any, options?: { [key: string]: any }) {
+  return request<API.Result<Boolean>>('/api/user/delete', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  });
+}
 /** 此处后端没有提供注释 GET /api/notices */
 export async function getNotices(options?: { [key: string]: any }) {
   return request<API.NoticeIconList>('/api/notices', {
@@ -57,8 +67,6 @@ export async function getNotices(options?: { [key: string]: any }) {
     ...(options || {}),
   });
 }
-
-
 
 /** 获取规则列表 GET /api/rule */
 export async function rule(

@@ -1,8 +1,8 @@
-import type {ActionType, ProColumns} from '@ant-design/pro-components';
-import {ProTable, TableDropdown} from '@ant-design/pro-components';
-import {useRef} from 'react';
-import {userListQuery} from "@/services/ant-design-pro/api";
-import {Image} from "antd";
+import type { ActionType, ProColumns } from '@ant-design/pro-components';
+import { ProTable } from '@ant-design/pro-components';
+import { useRef } from 'react';
+import { userDelete, userListQuery } from '@/services/ant-design-pro/api';
+import { Image, message } from 'antd';
 
 export const waitTimePromise = async (time: number = 100) => {
   return new Promise((resolve) => {
@@ -38,7 +38,7 @@ const columns: ProColumns<API.CurrentUser>[] = [
     dataIndex: 'avatarUrl',
     render: (_, record) => (
       <div>
-        <Image src={record.avatarUrl} width={50} height={50}/>
+        <Image src={record.avatarUrl} width={50} height={50} />
         {/*{JSON.stringify(record)}*/}
       </div>
     ),
@@ -61,7 +61,6 @@ const columns: ProColumns<API.CurrentUser>[] = [
   {
     title: '状态',
     dataIndex: 'userStatus',
-
   },
   {
     title: '权限编号',
@@ -72,7 +71,7 @@ const columns: ProColumns<API.CurrentUser>[] = [
     dataIndex: 'userRole',
     valueType: 'select',
     valueEnum: {
-      0: {text: '普通用户', status: 'Default'},
+      0: { text: '普通用户', status: 'Default' },
       1: {
         text: '管理员',
         status: 'Success',
@@ -128,8 +127,6 @@ const columns: ProColumns<API.CurrentUser>[] = [
   //   ),
   // },
 
-
-
   {
     title: '操作',
     valueType: 'option',
@@ -146,17 +143,32 @@ const columns: ProColumns<API.CurrentUser>[] = [
       <a href={record.url} target="_blank" rel="noopener noreferrer" key="view">
         查看
       </a>,
-      <TableDropdown
-        key="actionGroup"
-        onSelect={() => action?.reload()}
-        menus={[
-          {key: 'copy', name: '复制'},
-          {key: 'delete', name: '删除'},
-        ]}
-      />,
+      <a key="delete" onClick={() => handleDelete(record.id)}>
+        删除
+      </a>,
     ],
   },
 ];
+function handleDelete(id: number) {
+  const isConfirmed = window.confirm('确定要删除该记录吗？');
+  if (isConfirmed) {
+    // 用户点击了确定按钮，向后端发送删除请求
+    const deleteRequest = async () => {
+      // 发送删除请求到后端的代码
+      return await userDelete({ id: id });
+      // 确保请求成功并更新你的数据状态或列表项
+    };
+    deleteRequest().then((r) => {
+      if (r) {
+        message.success('删除成功');
+      } else {
+        message.error('删除失败');
+      }
+    });
+  } else {
+    // 用户点击了取消按钮，不执行任何操作
+  }
+}
 
 export default () => {
   const actionRef = useRef<ActionType>();
@@ -171,7 +183,7 @@ export default () => {
         const userList = await userListQuery();
         return {
           data: userList,
-        }
+        };
       }}
       editable={{
         type: 'multiple',
