@@ -1,12 +1,12 @@
 import Footer from '@/components/Footer';
-import {login} from '@/services/ant-design-pro/api';
-import {LockOutlined, UserOutlined,} from '@ant-design/icons';
-import {LoginForm, ProFormCheckbox, ProFormText,} from '@ant-design/pro-components';
-import {Alert, Divider, message, Tabs} from 'antd';
-import React, {useState} from 'react';
-import {history, Link, useModel} from 'umi';
+import { login } from '@/services/ant-design-pro/api';
+import { LockOutlined, UserOutlined } from '@ant-design/icons';
+import { LoginForm, ProFormCheckbox, ProFormText } from '@ant-design/pro-components';
+import { Alert, Divider, message, Tabs } from 'antd';
+import React, { useState } from 'react';
+import { history, Link, useModel } from 'umi';
 import styles from './index.less';
-import {SYSTEM_LOGO} from "@/constants"; //@代表src目录
+import { SYSTEM_LOGO } from '@/constants'; //@代表src目录
 const LoginMessage: React.FC<{
   content: string;
 }> = ({ content }) => (
@@ -53,11 +53,15 @@ const Login: React.FC = () => {
         return;
       }
       console.log(user);
-      // 如果失败去设置用户错误信息
-      setUserLoginState(user);
+      if (user != null) {
+        setUserLoginState(user);
+      }
+      // 如果失败抛出异常
+      throw new Error('');
     } catch (error) {
-      const defaultLoginFailureMessage = '登录失败，请重试！';
-      message.error(defaultLoginFailureMessage);
+      history.push({
+        pathname: '/user/login',
+      });
     }
   };
   const { status, type: loginType } = userLoginState;
@@ -67,8 +71,11 @@ const Login: React.FC = () => {
         <LoginForm
           logo={<img alt="logo" src={SYSTEM_LOGO} />}
           title="编程空间"
-          subTitle={<
-            a href={"https://github.com"} target={"_blank"} rel="noreferrer">最好的编程学习圈子</a>}
+          subTitle={
+            <a href={'https://github.com'} target={'_blank'} rel="noreferrer">
+              最好的编程学习圈子
+            </a>
+          }
           initialValues={{
             autoLogin: true,
           }}
@@ -99,7 +106,7 @@ const Login: React.FC = () => {
                   },
                   {
                     min: 4,
-                    type:"string",
+                    type: 'string',
                     message: '账号长度不能小于4位！',
                   },
                 ]}
@@ -118,14 +125,13 @@ const Login: React.FC = () => {
                   },
                   {
                     min: 8,
-                    type:"string",
+                    type: 'string',
                     message: '密码长度不能小于8位！',
                   },
                 ]}
               />
             </>
           )}
-
 
           <div
             style={{
@@ -135,24 +141,23 @@ const Login: React.FC = () => {
             <ProFormCheckbox noStyle name="autoLogin">
               自动登录
             </ProFormCheckbox>
-          <Divider type={"vertical"}/>
-          <Divider type={"vertical"}/>
-          <Divider type={"vertical"}/>
-           <Link to={"/user/register"}>新用户注册</Link>
+            <Divider type={'vertical'} />
+            <Divider type={'vertical'} />
+            <Divider type={'vertical'} />
+            <Link to={'/user/register'}>新用户注册</Link>
 
             <a
               style={{
                 float: 'right',
               }}
-              href={"https://github.com/1ranxu"}
-              target={"_blank"} rel="noreferrer"
+              href={'https://github.com/1ranxu'}
+              target={'_blank'}
+              rel="noreferrer"
             >
               忘记密码
             </a>
-
           </div>
         </LoginForm>
-
       </div>
       <Footer />
     </div>
