@@ -36,6 +36,7 @@ const columns: ProColumns<API.CurrentUser>[] = [
   {
     title: '头像',
     dataIndex: 'avatarUrl',
+    search: false,
     render: (_, record) => (
       <div>
         <Image src={record.avatarUrl} width={50} height={50} />
@@ -61,6 +62,7 @@ const columns: ProColumns<API.CurrentUser>[] = [
   {
     title: '状态',
     dataIndex: 'userStatus',
+    search: false,
   },
   {
     title: '权限编号',
@@ -82,6 +84,7 @@ const columns: ProColumns<API.CurrentUser>[] = [
     title: '创建时间',
     dataIndex: 'createTime',
     valueType: 'dateTime',
+    search: false,
   },
   // {
   //   disable: true,
@@ -184,7 +187,19 @@ export default () => {
       request={async (params = {}, sort, filter) => {
         console.log(sort, filter);
         await waitTime(2000);
-        const userList = await userListQuery();
+        const userList = await userListQuery({
+          id: params.id,
+          userAccount: params.userAccount,
+          username: params.username,
+          avatarUrl: params.string,
+          gender: params.gender,
+          phone: params.phone,
+          email: params.email,
+          userStatus: params.userStatus,
+          createTime: params.createTime,
+          userRole: params.userRole,
+          authCode: params.authCode,
+        });
         return {
           data: userList,
         };
