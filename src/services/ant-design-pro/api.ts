@@ -60,6 +60,17 @@ export async function userDelete(body: any, options?: { [key: string]: any }) {
     ...(options || {}),
   });
 }
+/** 管理员更新用户接口 /api/user/update */
+export async function userUpdate(body: API.CurrentUser, options?: { [key: string]: any }) {
+  return request<API.Result<Boolean>>('/api/user/update', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  });
+}
 /** 此处后端没有提供注释 GET /api/notices */
 export async function getNotices(options?: { [key: string]: any }) {
   return request<API.NoticeIconList>('/api/notices', {

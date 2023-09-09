@@ -1,7 +1,7 @@
 import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { ProTable } from '@ant-design/pro-components';
-import { useRef } from 'react';
-import { userDelete, userListQuery } from '@/services/ant-design-pro/api';
+import { Key, useRef } from 'react';
+import { userDelete, userListQuery, userUpdate } from '@/services/ant-design-pro/api';
 import { Image, message } from 'antd';
 
 export const waitTimePromise = async (time: number = 100) => {
@@ -133,15 +133,12 @@ const columns: ProColumns<API.CurrentUser>[] = [
     key: 'option',
     render: (text, record, _, action) => [
       <a
-        key="editable"
+        key="edit"
         onClick={() => {
           action?.startEditable?.(record.id);
         }}
       >
         编辑
-      </a>,
-      <a href={record.url} target="_blank" rel="noopener noreferrer" key="view">
-        查看
       </a>,
       <a key="delete" onClick={() => handleDelete(record.id)}>
         删除
@@ -149,6 +146,17 @@ const columns: ProColumns<API.CurrentUser>[] = [
     ],
   },
 ];
+//定义发送更新请求函数
+async function handleSave(key: any, row: API.CurrentUser) {
+  alert(row);
+  try {
+    await userUpdate(row);
+    message.success('更新用户成功');
+  } catch (error) {
+    message.error('更新用户失败');
+  }
+}
+// 定义发送删除用户请求函数
 function handleDelete(id: number) {
   const isConfirmed = window.confirm('确定要删除该记录吗？');
   if (isConfirmed) {
@@ -161,6 +169,8 @@ function handleDelete(id: number) {
     deleteRequest().then((r) => {
       if (r) {
         message.success('删除成功');
+        // 刷新页面
+        location.reload();
       } else {
         message.error('删除失败');
       }
@@ -169,7 +179,6 @@ function handleDelete(id: number) {
     // 用户点击了取消按钮，不执行任何操作
   }
 }
-
 export default () => {
   const actionRef = useRef<ActionType>();
   return (
@@ -187,6 +196,8 @@ export default () => {
       }}
       editable={{
         type: 'multiple',
+        onSave: handleSave,
+        deleteText: '',
       }}
       columnsState={{
         persistenceKey: 'pro-table-singe-demos',

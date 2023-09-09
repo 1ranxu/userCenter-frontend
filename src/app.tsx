@@ -1,24 +1,24 @@
 import Footer from '@/components/Footer';
 import RightContent from '@/components/RightContent';
-import {BookOutlined, LinkOutlined} from '@ant-design/icons';
-import type {Settings as LayoutSettings} from '@ant-design/pro-components';
-import {PageLoading, SettingDrawer} from '@ant-design/pro-components';
-import type {RunTimeLayoutConfig} from 'umi';
-import {history, Link} from 'umi';
+import { BookOutlined, LinkOutlined } from '@ant-design/icons';
+import type { Settings as LayoutSettings } from '@ant-design/pro-components';
+import { PageLoading, SettingDrawer } from '@ant-design/pro-components';
+import type { RunTimeLayoutConfig } from 'umi';
+import { history, Link } from 'umi';
 import defaultSettings from '../config/defaultSettings';
-import {currentUser as queryCurrentUser} from './services/ant-design-pro/api';
-import {RequestConfig} from "@@/plugin-request/request";
-import * as process from "process";
+import { currentUser as queryCurrentUser } from './services/ant-design-pro/api';
+import { RequestConfig } from '@@/plugin-request/request';
+import * as process from 'process';
 
 const isDev = process.env.NODE_ENV === 'development';
 const loginPath = '/user/login';
 /**
  * 无需登录的页面
  */
-const WHITE_LiIST = ["/user/register", loginPath];
+const WHITE_LiIST = ['/user/register', loginPath];
 /** 获取用户信息比较慢的时候会展示一个 loading */
 export const initialStateConfig = {
-  loading: <PageLoading/>,
+  loading: <PageLoading />,
 };
 export const request: RequestConfig = {
   timeout: 100000,
@@ -33,7 +33,6 @@ export async function getInitialState(): Promise<{
   loading?: boolean;
   fetchUserInfo?: () => Promise<API.CurrentUser | undefined>;
 }> {
-  alert(process.env.NODE_ENV);
   const fetchUserInfo = async () => {
     try {
       return await queryCurrentUser();
@@ -44,7 +43,7 @@ export async function getInitialState(): Promise<{
     return undefined;
   };
   // 如果是免登录登录页面，就执行
-  if (WHITE_LiIST.includes(history.location.pathname) ) {
+  if (WHITE_LiIST.includes(history.location.pathname)) {
     return {
       fetchUserInfo,
       settings: defaultSettings,
@@ -59,20 +58,17 @@ export async function getInitialState(): Promise<{
 }
 
 // ProLayout 支持的api https://procomponents.ant.design/components/layout
-export const layout: RunTimeLayoutConfig = ({initialState, setInitialState}) => {
+export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) => {
   return {
-    rightContentRender: () => <RightContent/>,
+    rightContentRender: () => <RightContent />,
     disableContentMargin: false,
     waterMarkProps: {
       content: initialState?.currentUser?.username,
     },
-    footerRender: () => <Footer/>,
+    footerRender: () => <Footer />,
     onPageChange: () => {
-      const {
-        location
-      } = history;
-      if (WHITE_LiIST.includes(location.pathname))
-        return;
+      const { location } = history;
+      if (WHITE_LiIST.includes(location.pathname)) return;
       // 如果没有登录，重定向到 login
       if (!initialState?.currentUser && location.pathname !== loginPath) {
         history.push(loginPath);
@@ -80,15 +76,15 @@ export const layout: RunTimeLayoutConfig = ({initialState, setInitialState}) => 
     },
     links: isDev
       ? [
-        <Link key="openapi" to="/umi/plugin/openapi" target="_blank">
-          <LinkOutlined/>
-          <span>OpenAPI 文档</span>
-        </Link>,
-        <Link to="/~docs" key="docs">
-          <BookOutlined/>
-          <span>业务组件文档</span>
-        </Link>,
-      ]
+          <Link key="openapi" to="/umi/plugin/openapi" target="_blank">
+            <LinkOutlined />
+            <span>OpenAPI 文档</span>
+          </Link>,
+          <Link to="/~docs" key="docs">
+            <BookOutlined />
+            <span>业务组件文档</span>
+          </Link>,
+        ]
       : [],
     menuHeaderRender: undefined,
     // 自定义 403 页面
