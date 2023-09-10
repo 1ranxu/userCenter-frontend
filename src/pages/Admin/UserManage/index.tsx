@@ -170,8 +170,6 @@ function handleDelete(id: number) {
   deleteRequest().then((r) => {
     if (r) {
       message.success('删除成功');
-      // 刷新页面
-      location.reload();
     } else {
       message.error('删除失败');
     }
@@ -199,6 +197,7 @@ export default () => {
           createTime: params.createTime,
           userRole: params.userRole,
           authCode: params.authCode,
+          token: params.token,
         });
         return {
           data: userList,

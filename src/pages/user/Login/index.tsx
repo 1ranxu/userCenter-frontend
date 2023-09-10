@@ -40,16 +40,25 @@ const Login: React.FC = () => {
         type,
       });
       if (user) {
+        // 登录之后从返回的数据中取出token
+        const { token } = user as API.CurrentUser;
+        // 把token存到sessionStorage
+        sessionStorage.setItem('token', token);
+
         const defaultLoginSuccessMessage = '登录成功！';
         message.success(defaultLoginSuccessMessage);
         await fetchUserInfo();
         /** 此方法会跳转到 redirect 参数所在的位置 */
         if (!history) return;
         const { query } = history.location;
-        const { redirect } = query as {
-          redirect: string;
-        };
-        history.push(redirect || '/');
+        // const { redirect } = query as {
+        //   redirect: string;
+        // };
+        // history.push(redirect || '/');
+        history.push({
+          pathname: '/',
+          query,
+        });
         return;
       }
       console.log(user);

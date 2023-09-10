@@ -23,6 +23,7 @@ declare namespace API {
     createTime: Date;
     userRole: number;
     authCode: string;
+    token: string;
     // name?: string;
     // avatar?: string;
     // userid?: string;
@@ -93,7 +94,7 @@ declare namespace API {
     userAccount?: string;
     userPassword?: string;
     checkPassword?: string;
-    authCode?: string
+    authCode?: string;
     type?: string;
   };
   type ErrorResponse = {
