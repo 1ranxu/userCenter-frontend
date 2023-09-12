@@ -1,14 +1,14 @@
+#指定基础镜像
 FROM nginx
-
+#指定工作目录
 WORKDIR /usr/share/nginx/html/
-USER root
-
+#把本地自定义的nginx.conf替换nginx镜像里的nginx.conf
 COPY ./docker/nginx.conf /etc/nginx/conf.d/default.conf
-
+#build本地前端项目
 RUN npm run build
-
+#把build好的dist目录放到nginx的默认html目录
 COPY ./dist  /usr/share/nginx/html/
-
+#显示的告诉别人我这个项目占用了80端口
 EXPOSE 80
-
+#使用镜像运行容器时自动执行,启动nginx
 CMD ["nginx", "-g", "daemon off;"]
