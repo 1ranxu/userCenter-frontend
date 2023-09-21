@@ -23,7 +23,8 @@ declare namespace API {
     createTime: Date;
     userRole: number;
     authCode: string;
-    token: string;
+    tags: string[];
+    profile: string;
     // name?: string;
     // avatar?: string;
     // userid?: string;

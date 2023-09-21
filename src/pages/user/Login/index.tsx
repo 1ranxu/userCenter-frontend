@@ -40,11 +40,6 @@ const Login: React.FC = () => {
         type,
       });
       if (user) {
-        // 登录之后从返回的数据中取出token
-        const { token } = user as API.CurrentUser;
-        // 把token存到sessionStorage
-        sessionStorage.setItem('token', token);
-
         const defaultLoginSuccessMessage = '登录成功！';
         message.success(defaultLoginSuccessMessage);
         await fetchUserInfo();

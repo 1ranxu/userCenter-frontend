@@ -21,9 +21,7 @@ request.interceptors.request.use((url, options): any => {
     url,
     options: {
       ...options,
-      headers: {
-        Authorization: sessionStorage.getItem('token'),
-      },
+      headers: {},
     },
   };
 });

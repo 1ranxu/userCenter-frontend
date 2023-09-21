@@ -48,6 +48,14 @@ const columns: ProColumns<API.CurrentUser>[] = [
   {
     title: '性别',
     dataIndex: 'gender',
+    valueType: 'select',
+    valueEnum: {
+      0: { text: '男', status: 'Default' },
+      1: {
+        text: '女',
+        status: 'Default',
+      },
+    },
   },
   {
     title: '电话',
@@ -67,6 +75,15 @@ const columns: ProColumns<API.CurrentUser>[] = [
   {
     title: '权限编号',
     dataIndex: 'authCode',
+  },
+  {
+    title: '标签',
+    dataIndex: 'tags',
+    search: false,
+  },
+  {
+    title: '个人简介',
+    dataIndex: 'profile',
   },
   {
     title: '角色',
@@ -197,8 +214,13 @@ export default () => {
           createTime: params.createTime,
           userRole: params.userRole,
           authCode: params.authCode,
-          token: params.token,
+          tags: params.tags,
+          profile: params.profile,
         });
+
+        // userList.forEach(user=>{
+        //   user.tags=JSON.parse(user.tags)
+        // })
         return {
           data: userList,
         };
@@ -242,7 +264,7 @@ export default () => {
         onChange: (page) => console.log(page),
       }}
       dateFormatter="string"
-      headerTitle="高级表格"
+      headerTitle="用户详情"
     />
   );
 };
