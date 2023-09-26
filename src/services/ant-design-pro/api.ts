@@ -43,7 +43,7 @@ export async function register(body: API.RegisterParams, options?: { [key: strin
 }
 /** 搜素用户接口 /api/user/query */
 export async function userListQuery(body: API.CurrentUser, options?: { [key: string]: any }) {
-  return request<API.Result<API.CurrentUser[]>>('/api/user/query', {
+  return request<API.UserListVO>('/api/user/query', {
     method: 'POST',
     data: body,
     ...(options || {}),

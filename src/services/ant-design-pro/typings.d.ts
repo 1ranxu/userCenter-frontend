@@ -2,6 +2,10 @@
 /* eslint-disable */
 
 declare namespace API {
+  type UserListVO = {
+    userList: CurrentUser[];
+    total: number;
+  };
   /**
    * 用于对接后端的通用结果返回类
    */

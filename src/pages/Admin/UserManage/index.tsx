@@ -71,6 +71,14 @@ const columns: ProColumns<API.CurrentUser>[] = [
     title: '状态',
     dataIndex: 'userStatus',
     search: false,
+    valueType: 'select',
+    valueEnum: {
+      0: { text: '正常', status: 'Success' },
+      1: {
+        text: '女',
+        status: 'Error',
+      },
+    },
   },
   {
     title: '权限编号',
@@ -202,7 +210,7 @@ export default () => {
       request={async (params = {}, sort, filter) => {
         console.log(sort, filter);
         await waitTime(2000);
-        const userList = await userListQuery({
+        const msg = await userListQuery({
           id: params.id,
           userAccount: params.userAccount,
           username: params.username,
@@ -216,13 +224,18 @@ export default () => {
           authCode: params.authCode,
           tags: params.tags,
           profile: params.profile,
+          page: params.current,
+          pageSize: params.pageSize,
         });
 
         // userList.forEach(user=>{
         //   user.tags=JSON.parse(user.tags)
         // })
         return {
-          data: userList,
+          data: msg.userList,
+          success: true,
+          // 不传会使用 data 的长度，如果是分页一定要传
+          total: msg.total,
         };
       }}
       editable={{
